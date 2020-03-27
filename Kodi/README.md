@@ -1,2 +1,0 @@
-# Repo.GoVi
-GoVi Repository
