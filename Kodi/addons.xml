@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<!-- GoVi Repository -->
+	<addon id="repository.GoVi" name="GoVi Repository" version="1.0.4" provider-name="GoVi">
+		<extension point="xbmc.addon.repository" name="GoVi Repository">
+			<dir>
+				<info compressed="false">https://govi-48.github.io/GoVi-Repo/Kodi/addons.xml</info>
+				<checksum>https://govi-48.github.io/GoVi-Repo/Kodi/addons.xml.md5</checksum>
+				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/</datadir>
+			</dir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>My version of Aeon Nox 5</summary>
+			<description>Main Repository for Aeon GoVi</description>
+			<platform>all</platform>
+			<news>v1.0.4[/I][CR]- Kodi 18.6</news>
+			<assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+			</assets>
+		</extension>
+	</addon>
+	
+<!-- Aeon GoVi -->
+	<addon id="skin.aeon.govi" version="0.0.48" name="Aeon GoVi" provider-name="GoVi">
+		<requires>
+			<import addon="xbmc.gui" version="5.14.0" />
+			<import addon="script.skinshortcuts" version="1.0.10" />
+			<import addon="service.library.data.provider" version="0.0.7" />
+			<import addon="resource.images.studios.white" version="0.0.1" />
+			<import addon="resource.images.recordlabels.white" version="0.0.1" />
+		</requires>
+		<extension point="xbmc.gui.skin" debugging="false">
+			<res width="1920" height="1080" aspect="16:9" default="true" folder="1080p" />
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="af_ZA">Geskep deur BigNoid, Modded deur GoVi, en Widgets deur Mr. V</summary>
+			<summary lang="de_DE">Erstellt von BigNoid, modifiziert von GoVi, Widgets von Mr. V</summary>
+			<summary lang="el_GR">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="en_AU">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="en_GB">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="en_NZ">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="en_US">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="es_ES">Creada por BigNoid, Modificada por GoVi, y Widgets por Mr. V</summary>
+			<summary lang="et_EE">Looja: BigNoid, muutja: GoVi, ja vidinad: Mr. V</summary>
+			<summary lang="fi_FI">BigNoidin tekemä ja GoVin muokkaama. Widgetit Mr. V:ltä</summary>
+			<summary lang="fr_CA">Créé par BigNoid, modifié by GoVi, et gadgets logiciels par Mr. V</summary>
+			<summary lang="fr_FR">Créé par BigNoid, Moddé par GoVi, avec les widgets de M. V</summary>
+			<summary lang="gl_ES">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="he_IL">המעטפת נוצרה על ידי BigNoid, Modded by GoVi, and והיישומונים על ידי Mr. VLO</summary>
+			<summary lang="hu_HU">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="is_IS">Útbúið af BigNoid, breytt af GoVi, viðmótshlutar eftir Mr. V</summary>
+			<summary lang="it_IT">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="ko_KR">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="lt_LT">Sukūrė BigNoid, modifikavo GoVi bei valdiklius pridėjo Mr. V</summary>
+			<summary lang="ms_MY">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="nb_NO">Laget av BigNoid, modifisert av GoVi, og miniprogrammer av Mr. V.</summary>
+			<summary lang="nl_NL">Ontwikkeld door BigNoid, aangepast door GoVi, en Widgets door Mr. V</summary>
+			<summary lang="pl_PL">Stworzona przez BigNoid, zmodyfikowana przez GoVi, a gadżety autorstwa Mr. V</summary>
+			<summary lang="pt_BR">Criado por BigNoid, Modificado por GoVi e Widgets por Mr. V</summary>
+			<summary lang="pt_PT">Criado por BigNoid, Modded por GoVi, e Widgets por Mr. V</summary>
+			<summary lang="ro_RO">Creat de BigNoid, Modificat de GoVi, și widget-uri deMr. V</summary>
+			<summary lang="ru_RU">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="sk_SK">Vytvoril BigNoid, Upravil GoVi, miniaplikácie vytvoril Mr. V</summary>
+			<summary lang="sv_SE">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="th_TH">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="tr_TR">BigNoid tarafından oluşturuldu; Modlar GoVi'dan, Widget'lar Mr. V'den.</summary>
+			<summary lang="vi_VN">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V - Sự trở về</summary>
+			<summary lang="zh_CN">Created by BigNoid, Modded by GoVi, and Widgets by Mr. V</summary>
+			<summary lang="zh_TW">由BigNoid原創，GoVi進行改造，以及由Mr. V製作的小工具</summary>
+			<description lang="af_ZA">Heeltemal oor ontwerp om 'n moderne aansig te skep, terwyl die klassieke Aeon gevoel behou word.</description>
+			<description lang="de_DE">Komplett neu designed für ein modernes Aussehen und das klassische Aeon-Feeling beizubehalten.</description>
+			<description lang="el_GR">Πλήρως επανασχεδιασμένο για να προσφέρει μια μοντέρνα αισθητική, διατηρώντας ταυτόχρονα την κλασική ομορφιά του Aeon.</description>
+			<description lang="en_AU">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+			<description lang="en_GB">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+			<description lang="en_NZ">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+			<description lang="en_US">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+			<description lang="es_ES">Completamente rediseñado para crear un aspecto moderno, pero conservando el toque clásico Aeon.</description>
+			<description lang="et_EE">Täielikult uuesti disainitud, et luua tänapäevane välimus samas säilitades klassikaline Aeoni tunnetus.</description>
+			<description lang="fi_FI">Täysin uudelleensuunniteltu moderni ulkoasu, kuitenkin tuntuen klassiselta Aeonilta.</description>
+			<description lang="fr_CA">Complètement remanié pour créer une apparence moderne, tout en conservant l’esprit classique d’Aeon.</description>
+			<description lang="fr_FR">Totalement revu pour créer un look moderne, en gardant l'expérience Aeon.</description>
+			<description lang="gl_ES">Redeseñado completamente para crear unha aparencia moderna ao tempo que mantén a sensación do clásico Aeon.</description>
+			<description lang="he_IL">עיצוב חדש היוצר מראה מודרני אך משמר את ההרגשה של Aeon הקלאסי.</description>
+			<description lang="hr_HR">Potpuno preoblikovan moderan izgled, uz zadržani klasični Aeon osjećaj.</description>
+			<description lang="hu_HU">Teljesen áttervezett modern kinézet, de megtartva a klasszikus Aeon érzetet.</description>
+			<description lang="is_IS">Endurhannað nútímalegt útlit í anda Aeon.</description>
+			<description lang="it_IT">Completamente ridisegnato per creare un look moderno, mantenendo la consueta qualità Aeon.</description>
+			<description lang="ko_KR">고전적인 Aeon 느낌을 유지하면서 현대적인 모습으로 완전히 다시 디자인하여 만들었습니다.</description>
+			<description lang="lt_LT">Pilnai atnaujinta, kad sukurtų modernią išvaizdą, išlaikant klasikinio Aeon pojūtį.</description>
+			<description lang="ms_MY">Direka semula sepenuhnya untuk hasilkan penampilan modern, tetapi masih mengekalkan penampilan Aeon klasik.</description>
+			<description lang="nb_NO">Helt redesignet for å tilby en moderne utforming, samtidig som den klassiske Aeon-følelsen er beholdt.</description>
+			<description lang="nl_NL">Volledig opnieuw ontworpen om een ​​moderne look te creëren, met behoud van het klassieke Aeon-gevoel.</description>
+			<description lang="pl_PL">Całkowicie przeprojektowana skóra Aeon, o nowoczesnym wyglądzie, zachowując klasyczny układ skóry Aeon.</description>
+			<description lang="pt_BR">Design completamente novo para criar um look moderno, mantendo o feeling do Aeon Clássico.</description>
+			<description lang="pt_PT">Completamente redesenhado para criar um visual moderno enquanto retém o toque clássico Aeon.</description>
+			<description lang="ro_RO">Complet reproiectat pentru a crea o înfățișare modernă, dar totuși păstrând atmosfera clasică Aeon.</description>
+			<description lang="ru_RU">Полностью переработан, чтобы создать современный облик, сохраняя при этом классическое чувство Aeon.</description>
+			<description lang="sk_SK">Kompletne prepracovaný dizajn s moderným vzhľadom pri zachovaní klasického štýlu Aeon.</description>
+			<description lang="sv_SE">Totalt omarbetad för att skapa ett modernt utseende, samtidigt som man behåller den klassiska Aeon-känslan.</description>
+			<description lang="th_TH">การออกแบบใหม่หมดจด เพื่อสร้างรูปลักษณ์ทันสมัย, ​​ขณะที่ยังคงความรู้สึกคลาสสิคของ Aeon.</description>
+			<description lang="tr_TR">Modern görünüme kavuşturmak için baştan tasarlandı, klasik Aeon hissi korundu</description>
+			<description lang="vi_VN">Thiết kế lại hoàn toàn để tạo nên một phong cách hiện đại, trong khi đó vẫn duy trì một cảm giác Aeon cổ điển.</description>
+			<description lang="zh_TW">完全的翻新設計以創造現代化的視覺感受，同時仍維持Aeon的經典外觀。</description>
+			<platform>all</platform>
+			<license>CC BY-NC-SA 4.0</license>
+			<forum></forum>
+			<website></website>
+			<source></source>
+			<assets>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<screenshot>resources/screenshots/screenshot-08.jpg</screenshot>
+				<screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
+				<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
+			</assets>
+			<news></news>
+		</extension>
+	</addon>
+	
+<!-- Super Favourites -->
+	<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="spoyser">
+	  <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.metahandler" optional="true" />
+	  </requires>
+	  <extension point="xbmc.python.pluginsource" library="default.py">
+	  <provides>executable</provides>
+	  </extension>
+	  <extension point="xbmc.service" library="service.py" start="startup" />
+	  <extension point="xbmc.addon.metadata">
+		<summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+		<description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+		<platform>all</platform>
+		<language>en</language>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+		<website></website>
+		<source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+		<email>seanpoyser at gmail.com</email>
+		<news>
+	1.0.59: 29th May 2017
+		- 'Now playing' text now defined by SF due to skin variations
+		</news>
+	  </extension>
+	  <extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+		  <item library="capture.py">
+			<label>$ADDON[plugin.program.super.favourites 30002]</label>
+			<visible>false</visible>
+		  </item>
+		  <item library="menu_addtofaves.py">
+			<label>$ADDON[plugin.program.super.favourites 30047]</label>
+			<visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+		  </item>
+		  <item library="menu_download.py">
+			<label>$ADDON[plugin.program.super.favourites 30259]</label>
+			<visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+		  </item>
+		</menu>
+	  </extension>
+	</addon>
+	
+<!-- Skin Shortcuts -->	
+	<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.20" provider-name="BigNoid,marcelveldt,auramod,cartmandos">
+		<requires>
+			<import addon="xbmc.python" version="2.20.0"/>
+			<import addon="script.module.simplejson" version="3.3.0"/>
+			<import addon="script.module.unidecode" version="0.4.14"/>
+		</requires>
+		<extension point="xbmc.python.library" library="default.py"/>
+		<extension point="xbmc.addon.metadata">
+			<news>Template improvements and bug fixes</news>
+			<description lang="bg">Добавка за облици, която осигурява просто управление и списък с потребителски преки пътища (изисква поддръжка от облика)</description>
+			<description lang="de">Add-on für Skins für einfache Bearbeitung und Auflistung von benutzerdefinierten Verknüpfungen (erfordert Skin-Unterstützung)</description>
+			<description lang="el">Πρόσθετο για κελύφη, το οποίο παρέχει έναν απλό τρόπο διαχείρισης και κατηγοριοποίησης των συντομεύσεων του χρήστη (πρέπει να υποστηρίζεται από το κέλυφος)</description>
+			<description lang="en">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+			<description lang="en_NZ">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+			<description lang="en_US">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+			<description lang="es">Complemento para las pieles para proporcionar una gestión sencilla y lista de atajos de usuario (requiere que la piel lo soporte)</description>
+			<description lang="fr_CA">Addiciel pour habillages qui fournit une gestion simple et un listage des raccourcis utilisateurs (exige la prise en charge de l'habillage)</description>
+			<description lang="gl">Complemento que fornece aos temas dunha xestión sinxela dos atallos dos usuarios (require soporte do tema)</description>
+			<description lang="hr">Dodatak za presvlake koja omogućava jednostavno upravljanje i prikaz korisnikovih prečaca (zahtijeva podršku presvlake) </description>
+			<description lang="hu">Felszín kiegészítő amely könnyen kezelhetővé és listázhatóvá teszi a felhasználói parancsikonokat (Felszín támogatás szükséges)</description>
+			<description lang="is">Viðbót fyrir viðmót til að halda utan um flýtivísa og fá yfirlit yfir þá (þarfnast stuðnings frá viðmóti)</description>
+			<description lang="it">Add-on per gli skin per consentire un facile gestione ed elenco delle scorciatoie utente (richiede che lo skin lo supporti)</description>
+			<description lang="lt">Priedas teminėms išvaizdoms, kad jos turėtų galimybę paprastai tvarkyti ir atvaizduoti vartotojo  sukurtas nuorodas (reikalingas teminės išvaizdos palaikymas)</description>
+			<description lang="nl">Add-on voor skins om te voorzien in het eenvoudig beheren en sorteren van gebruikers snelkoppelingen (vereist skin ondersteuning)</description>
+			<description lang="no">Tillegg for enkel administrering og opplisting av bruker-snarveier i tema (krever støtte i tema)</description>
+			<description lang="pl">Wtyczka dla skór, która zapewnia proste zarządzanie i tworzenie list skrótów użytkownika (wymaga wsparcia skóry)</description>
+			<description lang="pt">Um add-on que permite que os temas tenham recursos simples para gerir e listar atalhos de utilizadores (é necessário suporte do tema)</description>
+			<description lang="pt_BR">Add-on para que as skins possam prover gerenciamento de lista de atalhos para o menu principal (requer suporte da skin)</description>
+			<description lang="ru">Дополнение для обложек, предоставляющее простой способ управления и список пользовательских ярлыков (требуется поддержка обложкой)</description>
+			<description lang="sv">Skinntillägg som tillhandahåller enkel hantering och översikt av användargenvägar (om skinnet stöder det)</description>
+			<description lang="zh">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
+			<language></language>
+			<platform>all</platform>
+			<license>GNU General Public License, v2</license>
+			<forum>http://forum.xbmc.org/showthread.php?tid=178294</forum>
+			<website></website>
+			<email></email>
+			<source>https://github.com/BigNoid/script.skinshortcuts</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		</extension>
+	</addon>
+	
+</addons>
