@@ -10,6 +10,6 @@
 ```
 
 <pre>
-   %USERNAME%= Tu nombre de usuario.
+  %USERNAME%= Tu nombre de usuario.
 </pre>
     
