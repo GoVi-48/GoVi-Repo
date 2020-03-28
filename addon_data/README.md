@@ -9,8 +9,4 @@
 "C:\Users\%USERNAME%\AppData\Roaming\Kodi"
 ```
 
-<pre>
-  %USERNAME%= Tu nombre de usuario.
-....
-</pre>
-    
+&nbsp; %USERNAME%= Tu nombre de usuario.
