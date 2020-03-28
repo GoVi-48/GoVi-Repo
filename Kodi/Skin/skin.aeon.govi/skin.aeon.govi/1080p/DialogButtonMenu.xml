@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol>10001</defaultcontrol>
+	<include>FullscreenDimensions</include>
+	<include>OpenClose_FadeSlide_Left</include>
+	<coordinates>
+		<system>1</system>
+		<left>5</left>
+		<top>25</top>
+	</coordinates>
+	<controls>
+	    <include>FullScreen_Overlay</include>
+		<control type="group" id="9000">
+    	    <posx>0</posx>
+		    <posy>-5</posy>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+		    
+<!-- Labels -->
+			<control type="button" id="10001">
+				<description>System settings label</description>
+				<label>5</label>
+				<width>315</width>
+				<height>64</height>
+				<posy>66</posy>
+				<font>font14</font>
+				<textcolor>azure</textcolor>
+				<focusedcolor>$VAR[ThemeLabelColor]</focusedcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<textwidth>265</textwidth>
+				<textoffsetx>60</textoffsetx>
+				<texturenofocus>dialogs/dialog_Shuthdown_Menu_NF.png</texturenofocus>
+				<texturefocus>dialogs/dialog_Shuthdown_Menu_F.png</texturefocus>
+				<onclick>ActivateWindow(settings)</onclick>
+				<onup>10008</onup>
+				<ondown>10002</ondown>
+			</control>
+			<control type="button" id="10002">
+				<description>Skin Settings</description>
+				<label>10035</label>
+				<width>315</width>
+				<height>64</height>
+				<posy>130</posy>
+				<font>font14</font>
+                <textcolor>azure</textcolor>
+				<focusedcolor>$VAR[ThemeLabelColor]</focusedcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<textwidth>265</textwidth>
+				<textoffsetx>60</textoffsetx>
+				<texturenofocus>dialogs/dialog_Shuthdown_Menu_NF.png</texturenofocus>
+				<texturefocus>dialogs/dialog_Shuthdown_Menu_F.png</texturefocus>
+				<onclick>Dialog.Close(all,true)</onclick>
+				<onclick>ActivateWindow(skinsettings)</onclick>
+				<onup>10001</onup>
+				<ondown>10003</ondown>
+			</control>
+			<control type="button" id="10003">
+				<description>Reload Skin</description>
+				<label>20183</label>
+				<width>315</width>
+				<height>64</height>
+				<posy>194</posy>
+				<font>font14</font>
+				<textcolor>azure</textcolor>
+				<focusedcolor>$VAR[ThemeLabelColor]</focusedcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<textwidth>265</textwidth>
+				<textoffsetx>60</textoffsetx>
+				<texturenofocus>dialogs/dialog_Shuthdown_Menu_NF.png</texturenofocus>
+				<texturefocus>dialogs/dialog_Shuthdown_Menu_F.png</texturefocus>
+				<onclick>Dialog.Close(all,true)</onclick>
+				<onclick>ReloadSkin</onclick>
+				<onup>10002</onup>
+				<ondown>10004</ondown>
+			</control>
+			<control type="button" id="10004">
+				<label>24001</label>
+				<width>315</width>
+				<height>64</height>
+				<posy>258</posy>
+				<font>font14</font>
+				<textcolor>azure</textcolor>
+				<focusedcolor>$VAR[ThemeLabelColor]</focusedcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<textwidth>265</textwidth>
+				<textoffsetx>60</textoffsetx>
+				<texturenofocus>dialogs/dialog_Shuthdown_Menu_NF.png</texturenofocus>
+				<texturefocus>dialogs/dialog_Shuthdown_Menu_F.png</texturefocus>
+				<onclick>Dialog.Close(all,true)</onclick>
+				<onclick>ActivateWindow(AddonBrowser)</onclick>
+				<onup>10003</onup>
+				<ondown>10005</ondown>
+			</control>
+			<control type="button" id="10005">
+				<label>744</label>
+				<width>315</width>
+				<height>64</height>
+				<posy>322</posy>
+				<font>font14</font>
+				<textcolor>azure</textcolor>
+				<focusedcolor>$VAR[ThemeLabelColor]</focusedcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<textwidth>265</textwidth>
+				<textoffsetx>60</textoffsetx>
+				<texturenofocus>dialogs/dialog_Shuthdown_Menu_NF.png</texturenofocus>
+				<texturefocus>dialogs/dialog_Shuthdown_Menu_F.png</texturefocus>
+				<onclick>Dialog.Close(all,true)</onclick>
+				<onclick>ActivateWindow(FileManager)</onclick>
+				<onup>10004</onup>
+				<ondown>10006</ondown>
+			</control>
+			<control type="button" id="10006">
+				<description>Favoritos</description>
+				<label>1036</label>
+				<width>315</width>
+				<height>64</height>
+				<posy>386</posy>
+				<font>font14</font>
+				<textcolor>azure</textcolor>
+				<focusedcolor>$VAR[ThemeLabelColor]</focusedcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<textwidth>265</textwidth>
+				<textoffsetx>60</textoffsetx>
+				<texturenofocus>dialogs/dialog_Shuthdown_Menu_NF.png</texturenofocus>
+				<texturefocus>dialogs/dialog_Shuthdown_Menu_F.png</texturefocus>
+				<onclick>Dialog.Close(all,true)</onclick>
+				<onclick>ActivateWindow(favourites)</onclick>
+				<onup>10005</onup>
+				<ondown>10007</ondown>
+			</control>
+			<control type="button" id="10007">
+				<description>Super 1036</description>
+				<label>Super Favoritos</label>
+				<width>315</width>
+				<height>64</height>
+				<posy>450</posy>
+				<font>font14</font>
+				<textcolor>azure</textcolor>
+				<focusedcolor>$VAR[ThemeLabelColor]</focusedcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<textwidth>265</textwidth>
+				<textoffsetx>60</textoffsetx>
+				<texturenofocus>dialogs/dialog_Shuthdown_Menu_NF.png</texturenofocus>
+				<texturefocus>dialogs/dialog_Shuthdown_Menu_F.png</texturefocus>
+				<onclick>Dialog.Close(all,true)</onclick>
+				<onclick>RunAddon(plugin.program.super.favourites)</onclick>
+				<onup>10006</onup>
+				<ondown>10008</ondown>
+			</control>
+			<control type="button" id="10008">
+				<description>Exit button</description>
+				<label>13012</label>
+				<width>315</width>
+				<height>64</height>
+				<posy>514</posy>
+				<font>font14</font>
+				<textcolor>azure</textcolor>
+				<focusedcolor>$VAR[ThemeLabelColor]</focusedcolor>
+				<shadowcolor>shadow</shadowcolor>
+				<textwidth>265</textwidth>
+				<textoffsetx>60</textoffsetx>
+				<texturenofocus>dialogs/dialog_Shuthdown_Menu_NF.png</texturenofocus>
+				<texturefocus>dialogs/dialog_Shuthdown_Menu_F.png</texturefocus>
+				<onclick>Dialog.Close(all,true)</onclick>
+				<onclick>Quit()</onclick>
+				<onup>10007</onup>
+				<ondown>10001</ondown>
+			</control>
+<!-- Icons -->
+		    <control type="group">
+				<top>10</top>
+				<left>10</left>
+				<aligny>left</aligny>
+				<control type="button">
+					<description>System settings icon</description>
+					<width>40</width>
+					<height>40</height>
+					<posy>66</posy>
+					<texturenofocus colordiffuse="FFc7c7c7">Icons\Settings_focus.png</texturenofocus>
+					<texturefocus>Icons\Settings_focus.png</texturefocus>
+				</control>
+				<control type="button">
+					<description>Skin settings icon</description>
+					<width>40</width>
+					<height>40</height>
+					<posy>130</posy>
+					<texturenofocus colordiffuse="FFc7c7c7">Icons\System2_focus.png</texturenofocus>
+					<texturefocus>Icons\System2_focus.png</texturefocus>
+				</control>
+				<control type="button">
+					<description>Reload skin icon</description>
+					<width>40</width>
+					<height>40</height>
+					<posy>194</posy>
+					<texturenofocus colordiffuse="FFc7c7c7">Icons\Interface_focus.png</texturenofocus>
+					<texturefocus>Icons\Interface_focus.png</texturefocus>
+				</control>
+				<control type="button">
+					<description>Reload skin icon</description>
+					<width>40</width>
+					<height>40</height>
+					<posy>258</posy>
+					<texturenofocus colordiffuse="FFc7c7c7">icons\Addons_focus.png</texturenofocus>
+					<texturefocus>icons\Addons_focus.png</texturefocus>
+				</control>
+				<control type="button">
+					<description>Reload skin icon</description>
+					<width>40</width>
+					<height>40</height>
+					<posy>322</posy>
+					<texturenofocus colordiffuse="FFc7c7c7">icons\File_Manager_focus.png</texturenofocus>
+					<texturefocus>icons\File_Manager_focus.png</texturefocus>
+				</control>
+				<control type="button">
+					<description>Favourites icon</description>
+					<width>40</width>
+					<height>40</height>
+					<posy>386</posy>
+					<texturenofocus colordiffuse="FFc7c7c7">Icons\Favourites_focus.png</texturenofocus>
+					<texturefocus>icons\Favourites_focus.png</texturefocus>
+				</control>
+				<control type="button">
+					<description>Super Favourites icon</description>
+					<width>40</width>
+					<height>40</height>
+					<posy>450</posy>
+					<texturenofocus colordiffuse="FFc7c7c7">Icons\Super_Favourites_focus.png</texturenofocus>
+					<texturefocus>Icons\Super_Favourites_focus.png</texturefocus>
+				</control>
+				<control type="button">
+					<description>Exit icon</description>
+					<width>40</width>
+					<height>40</height>
+					<posy>514</posy>
+					<texturenofocus colordiffuse="FFc7c7c7">icons/power_fo.png</texturenofocus>
+					<texturefocus>icons/power_fo.png</texturefocus>
+				</control>
+            </control>
+		</control>
+	</controls>
+</window>
