@@ -10,5 +10,5 @@
 ```
 
 <code>
-   * %USERNAME%= Tu nombre de usuario.
+&nbsp; &nbsp; * %USERNAME%= Tu nombre de usuario.
 </code>
