@@ -159,9 +159,6 @@
 			<description lang="zh_TW">完全的翻新設計以創造現代化的視覺感受，同時仍維持Aeon的經典外觀。</description>
 			<platform>all</platform>
 			<license>CC BY-NC-SA 4.0</license>
-			<forum></forum>
-			<website></website>
-			<source></source>
 			<assets>
 				<icon>resources/icon.png</icon>
 				<fanart>resources/fanart.jpg</fanart>
@@ -169,7 +166,6 @@
 				<screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
 				<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 			</assets>
-			<news></news>
 		</extension>
 	</addon>
 
