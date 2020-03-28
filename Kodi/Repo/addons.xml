@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<!-- Repository GoVi -->
+	<addon id="repository.govi" name="GoVi Repository" version="1.0.4" provider-name="GoVi">
+		<extension point="xbmc.addon.repository" name="GoVi Repository">
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Repo/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Repo/addons.xml.md5</checksum>
+				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kod/Repo/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Skin/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Skin/addons.xml.md5</checksum>
+				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Skin/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Program/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Program/addons.xml.md5</checksum>
+				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Program/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Program/IvueTVGuide/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Program/IvueTVGuide/addons.xml.md5</checksum>
+				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Program/IvueTVGuide/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Video/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Video/addons.xml.md5</checksum>
+				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Video/</datadir>
+			</dir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>GoVi Main Repository</summary>
+			<description>Main Repository for GoVi Builds</description>
+			<platform>all</platform>
+			<news>v1.0.4[/I][CR]- Kodi 18.6</news>
+			<assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+			</assets>
+		</extension>
+	</addon>
+	
+<!-- Repository Balandro -->	
+	<addon id="repository.balandro" name="Balandro Repo" version="1.0.3" provider-name="Balandro">
+		<requires>
+			<import addon="xbmc.addon" version="12.0.0"/>
+		</requires>
+
+		<extension point="xbmc.addon.repository" name="Balandro Repo">
+			<info>https://balandro.tk/repo/addons.xml</info>
+			<checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://balandro.tk/repo</datadir>
+		</extension>
+
+		<extension point="xbmc.addon.metadata">
+			<summary>Repositorio para Balandro</summary>
+			<description>Balandro es un navegador para webs con vídeos de películas y series.</description>
+			<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+			<platform>all</platform>
+		</extension>
+
+	</addon>	
+
+<!-- Repository Palantir -->
+	<addon id="repository.Palantir" name="[COLOR gold]Palantir[/COLOR] Repo" version="1.0.1" provider-name="TierraMedia">
+		<extension point="xbmc.addon.repository" name="Palantir Repo">
+			<info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Palantiraddon/repo/master/Palantir/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>Repositorio para Palantir</summary>
+			<description></description>
+			<disclaimer></disclaimer>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
+<!-- Repository Kodi Spain -->
+	<addon id="repository.kodispain" name="kodispain repository" version="1.0" provider-name="joheos11">
+		<extension point="xbmc.addon.repository" name="KodiSpain repository">
+			<info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>-KodiSpain Repo</summary>
+			<description>Repositorio creado para grupo telegram http://t.me/kodispain</description>
+			<disclaimer></disclaimer>
+			<platform>all</platform>
+		</extension>
+	</addon>
+
+<!-- Repository Elementum -->	
+	<addon id="repository.elementum" name="Elementum Repository" version="0.1.46" provider-name="elgatito"><requires></requires><extension point="xbmc.addon.repository" name="Elementum Repository"><info compressed="false">http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml</info><checksum>http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml.md5</checksum><datadir zip="true">http://127.0.0.1:65220/repository/elgatito/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Elementum updates</summary></extension></addon>
+	
+</addons>
