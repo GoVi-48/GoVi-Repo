@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Búsqueda Local</label>
+		<label2>Ítem Personalizado</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>special://skin/extras/icons/search.png</thumb>
+		<action>RunAddOn(script.globalsearch)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>En Youtube</label>
+		<label2>Ítem Personalizado</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>special://skin/extras/icons/youtube.png</thumb>
+		<action>ActivateWindow(Videos,"plugin://plugin.video.youtube/kodion/search/list/",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TMdb</label>
+		<label2>Ítem Personalizado</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>special://skin/extras/icons/tmdb.png</thumb>
+		<action>ActivateWindow(Videos,"plugin://plugin.video.themoviedb.helper/?info=dir_tmdb&amp;widget=True",return)</action>
+	</shortcut>
+</shortcuts>

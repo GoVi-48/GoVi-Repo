@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>script.ivueguide</defaultID>
+		<label>Guía Ivue</label>
+		<label2>Programa</label2>
+		<icon>DefaultAddon.png</icon>
+		<thumb>image://C%3a%5cUsers%5cTHC%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.ivueguide%5cicon.png/</thumb>
+		<action>RunAddOn(script.ivueguide)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>19069</defaultID>
+		<label>Guía TV</label>
+		<label2>Ítem Personalizado</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(TVGuide)</action>
+	</shortcut>
+</shortcuts>

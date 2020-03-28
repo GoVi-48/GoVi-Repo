@@ -1,0 +1,4 @@
+channels = ffc9c9c9
+program_description = ffc9c9c9
+program_nofocus = ffffffff
+program_focus = ffffffff

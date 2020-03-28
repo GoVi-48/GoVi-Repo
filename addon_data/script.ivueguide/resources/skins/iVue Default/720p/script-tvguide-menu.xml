@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="false">4001</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+    <animation effect="slide" start="300,0" end="0,0" time="500">WindowOpen</animation>
+    <animation effect="slide" start="0,0" end="300,0" time="500">WindowClose</animation>
+    <controls>
+
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>513</width>
+            <height>451</height>
+            <texture>tvguide-menu-bkgrd.png</texture>
+        </control>
+        <control type="image">
+            <posx>30</posx>
+            <posy>30</posy>
+            <width>1220</width>
+            <height>660</height>
+            <texture>menubg.png</texture>
+        </control>
+			<control type="image">
+                <description>iVue logo</description>
+                <posx>101</posx>
+                <posy>50</posy>
+                <width>220</width>
+                <height>110</height>
+                <aspectratio>keep</aspectratio>
+                <fadetime>500</fadetime>
+                <texture>iVuetvguide-logo.png</texture>
+            </control>
+        <control type="image" id="4100">
+            <posx>128</posx>
+            <posy>533</posy>
+            <width>150</width>
+            <height>80</height>
+            <aspectratio>keep</aspectratio>
+        </control>
+<control type="label">
+                    <description>Selected Channel</description>
+                    <posx>133</posx>
+                    <posy>598</posy>
+                    <width>250</width>
+                    <height>50</height>
+                    <textcolor>ffffffff</textcolor>
+                    <font>font13</font>
+					<align>left</align>
+                    <aligny>center</aligny>
+					<label>Selected Channel</label>
+<visible>true</visible>
+                </control>
+        <control type="label" id="4101">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>240</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>osdTitle</font>
+            <textcolor>ffffffff</textcolor>
+<visible>false </visible>
+        </control>
+
+        <control type="button" id="4000"><!-- watch -->
+            <posx>530</posx>
+            <posy>148</posy>
+            <width>240</width>
+            <height>30</height>
+            <texturefocus>menu button-focus.png</texturefocus>
+			<texturenofocus>menu button.png</texturenofocus>
+            <onup>4000</onup>
+            <ondown>4002</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+<visible>false </visible>
+        </control>
+		
+        <control type="label" id="4102"><!-- Show Title -->
+            <posx>50</posx>
+            <posy>40</posy>
+            <width>500</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>false </visible>
+        </control>
+
+        <control type="textbox" id="4103">
+            <description>Program description</description>
+            <posx>120</posx>
+            <posy>450</posy>
+            <width>305</width>
+            <height>400</height>
+            <font>font12</font> 
+            <textcolor>FFFFFFFF</textcolor>
+            <align>left</align>
+            <wrapmultiline>true</wrapmultiline>
+            <visible>false</visible>
+            <autoscroll time="5000" delay="6000" repeat="6000">true</autoscroll>
+        </control>
+
+           <control type="image" id="4104">
+                <description>Program logo / Source logo</description>
+                <posx>112</posx>
+                <posy>167</posy>
+                <width>316</width>
+                <height>175</height>
+                <aligny>top</aligny>
+                <aspectratio></aspectratio>
+                <fadetime>500</fadetime>
+                <texture>-</texture>
+			        <visible>false</visible>
+            </control>		
+
+        <control type="button" id="4001"><!-- Choose Stream -->
+            <posx>83</posx>
+            <posy>183</posy>
+            <width>240</width>
+            <height>30</height>
+			<texturefocus>menu button-focus.png</texturefocus>
+			<texturenofocus>menu button.png</texturenofocus>
+            <onup>4004</onup>
+            <ondown>4003</ondown>
+            <onleft>4001</onleft>
+            <onright>30011</onright>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+            <label>$ADDON[script.ivueguide 30304]</label>
+        </control>
+		
+#        <control type="label"> <!-- Choose Stream Text -->
+#            <posx>530</posx>
+#            <posy>248</posy>
+#            <width>240</width>
+#            <height>200</height>
+#            <font>tvg_font13</font>
+#            <textcolor>ffffffff</textcolor>
+#            <label>$ADDON[script.ivueguide 30305]</label>
+#            <wrapmultiline>true</wrapmultiline>
+#        </control>
+
+        <control type="button" id="4003"><!-- CHANNELS -->
+            <posx>83</posx>
+            <posy>233</posy>
+            <width>240</width>
+            <height>30</height>
+            <texturefocus>menu button-focus.png</texturefocus>
+			<texturenofocus>menu button.png</texturenofocus>
+            <onup>4001</onup>
+            <ondown>4002</ondown>
+            <onleft>4003</onleft>
+            <onright>30011</onright>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+            <label>$ADDON[script.ivueguide 30307]</label>
+        </control>
+		
+        <control type="button" id="4002"><!-- REMINDER -->
+            <posx>83</posx>
+            <posy>283</posy>
+            <width>240</width>
+            <height>30</height>
+            <texturefocus>menu button-focus.png</texturefocus>
+			<texturenofocus>menu button.png</texturenofocus>
+            <onup>4003</onup>
+            <ondown>4446</ondown>
+            <onleft>4002</onleft>
+            <onright>30011</onright>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+        </control>
+		
+        <control type="button" id="4446"><!-- TV Shows -->
+            <onclick>RunScript(script.extendedinfo,info=list,type=tv)</onclick>
+            <posx>83</posx>
+            <posy>333</posy>
+            <width>240</width>
+            <height>30</height>
+            <texturefocus>menu button-focus.png</texturefocus>
+			<texturenofocus>menu button.png</texturenofocus>
+            <onup>4002</onup>
+            <ondown>4445</ondown>
+            <onleft>4446</onleft>
+            <onright>30011</onright>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<label>TV Shows</label>
+			<visible>true</visible>
+        </control>
+
+        <control type="button" id="4445"><!-- Movies -->
+            <onclick>RunScript(script.extendedinfo,info=list,type=movie)</onclick>
+            <posx>83</posx>
+            <posy>383</posy>
+            <width>240</width>
+            <height>30</height>
+            <texturefocus>menu button-focus.png</texturefocus>
+			<texturenofocus>menu button.png</texturenofocus>
+            <onup>4446</onup>
+            <ondown>30009</ondown>
+            <onleft>4445</onleft>
+            <onright>30011</onright>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<label>Movies</label>
+			<visible>true</visible>
+        </control>
+		
+        <control type="button" id="30009"><!-- EDIT SHORTCUTS -->
+            <posx>83</posx>
+            <posy>433</posy>
+            <width>240</width>
+            <height>30</height>
+            <texturefocus>menu button-focus.png</texturefocus>
+			<texturenofocus>menu button.png</texturenofocus>
+            <onup>4445</onup>
+            <ondown>4004</ondown>
+            <onleft>30009</onleft>
+            <onright>30011</onright>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<label>Edit Shortcuts</label>
+			<visible>true</visible>
+        </control>
+
+        <control type="button" id="4004"><!-- QUIT -->
+            <posx>83</posx>
+            <posy>483</posy>
+            <width>240</width>
+            <height>30</height>
+          <texturefocus>menu button-focus.png</texturefocus>
+			<texturenofocus>menu button.png</texturenofocus>
+            <onup>30009</onup>
+            <ondown>4001</ondown>
+            <onleft>4004</onleft>
+            <onright>30011</onright>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+            <label>$ADDON[script.ivueguide 30308]</label>
+        </control>
+
+        <control type="button" id="80000"><!-- GENESIS -->
+            <posx>830</posx>
+            <posy>398</posy>
+            <width>240</width>
+            <height>30</height>
+            <texturefocus>tvguide-program-menu-focus.png</texturefocus>
+			<texturenofocus>tvguide-program-grey2.png</texturenofocus>
+            <onup>4002</onup>
+            <ondown>80001</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<label>$ADDON[script.ivueguide 80000]</label>
+<visible>false </visible>
+        </control>
+
+        <control type="button" id="80003"><!-- My Recordings -->
+            <posx>830</posx>
+            <posy>488</posy>
+            <width>240</width>
+            <height>30</height>
+            <texturefocus>tvguide-program-menu-focus.png</texturefocus>
+			<texturenofocus>tvguide-program-grey2.png</texturenofocus>
+            <onup>80002</onup>
+            <ondown>80004</ondown>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+			<label>$ADDON[script.ivueguide 80003]</label>
+<visible>false </visible>
+        </control>
+		
+
+        <control type="button" id="30011"><!-- Shortcut1 -->
+            <posx>440</posx>
+            <posy>89</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			<texturenofocus>shortcut.png</texturenofocus>
+            <onup>30017</onup>
+            <ondown>30014</ondown>
+            <onleft>4001</onleft>
+            <onright>30012</onright>
+			<visible>true</visible>
+			<label>$ADDON[script.ivueguide 80005]</label>
+		</control>
+
+        <control type="label" id="31011"><!-- Shortcut1 Title -->
+            <posx>440</posx>
+            <posy>88</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32011"><!-- Shortcut1 image -->
+				<posx>440</posx>
+				<posy>119</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+
+			
+        <control type="button" id="30012"><!-- Shortcut2 -->
+            <posx>700</posx>
+            <posy>89</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			<texturenofocus>shortcut.png</texturenofocus>
+            <onup>30018</onup>
+            <ondown>30015</ondown>
+            <onleft>30011</onleft>
+            <onright>30013</onright>
+			<visible>true</visible>
+			<label>$ADDON[script.ivueguide 80005]</label>
+        </control>
+
+        <control type="label" id="31012"><!-- Shortcut2 Title -->
+            <posx>700</posx>
+            <posy>88</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32012"><!-- Shortcut2 image -->
+				<posx>700</posx>
+				<posy>119</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+
+			
+        <control type="button" id="30013"><!-- Shortcut3 -->
+            <posx>960</posx>
+            <posy>89</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			<texturenofocus>shortcut.png</texturenofocus>
+            <onup>30019</onup>
+            <ondown>30016</ondown>
+            <onleft>30012</onleft>
+            <onright>30011</onright>
+			<visible>true</visible>
+			<label>$ADDON[script.ivueguide 80005]</label>
+        </control>
+
+        <control type="label" id="31013"><!-- Shortcut3 Title -->
+            <posx>960</posx>
+            <posy>88</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32013"><!-- Shortcut3 image -->
+				<posx>960</posx>
+				<posy>119</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+
+			
+        <control type="button" id="30014"><!-- Shortcut4 -->
+            <posx>440</posx>
+            <posy>279</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			<texturenofocus>shortcut.png</texturenofocus>
+            <onup>30011</onup>
+            <ondown>30017</ondown>
+            <onleft>4001</onleft>
+            <onright>30015</onright>
+			<visible>true</visible>
+			<label>$ADDON[script.ivueguide 80005]</label>
+		</control>
+
+        <control type="label" id="31014"><!-- Shortcut4 Title -->
+            <posx>440</posx>
+            <posy>278</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32014"><!-- Shortcut4 image -->
+				<posx>440</posx>
+				<posy>309</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+
+			
+        <control type="button" id="30015"><!-- Shortcut5 -->
+            <posx>700</posx>
+            <posy>279</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			<texturenofocus>shortcut.png</texturenofocus>
+            <onup>30012</onup>
+            <ondown>30018</ondown>
+            <onleft>30014</onleft>
+            <onright>30016</onright>
+			<visible>true</visible>
+			<label>$ADDON[script.ivueguide 80005]</label>
+        </control>
+
+        <control type="label" id="31015"><!-- Shortcut5 Title -->
+            <posx>700</posx>
+            <posy>278</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32015"><!-- Shortcut5 image -->
+				<posx>700</posx>
+				<posy>309</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+
+        <control type="button" id="30016"><!-- shortcut 6 -->
+            <posx>960</posx>
+            <posy>279</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			<texturenofocus>shortcut.png</texturenofocus>
+            <onup>30013</onup>
+            <ondown>30019</ondown>
+            <onleft>30015</onleft>
+            <onright>30014</onright>
+			<label>$ADDON[script.ivueguide 80005]</label>
+				<visible>true</visible>
+		</control>
+
+        <control type="label" id="31016"><!-- Shortcut6 Title -->
+            <posx>960</posx>
+            <posy>278</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32016"><!-- Shortcut6 image -->
+				<posx>960</posx>
+				<posy>309</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+		
+        <control type="button" id="30017"><!-- shortcut 7 -->
+            <posx>440</posx>
+            <posy>468</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			   <texturenofocus>shortcut.png</texturenofocus>
+            <onup>30014</onup>
+            <ondown>30011</ondown>
+            <onleft>4001</onleft>
+            <onright>30018</onright>
+			<label>$ADDON[script.ivueguide 80005]</label>
+				<visible>true</visible>
+        </control>
+
+        <control type="label" id="31017"><!-- Shortcut7 Title -->
+            <posx>440</posx>
+            <posy>467</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32017"><!-- Shortcut7 image -->
+				<posx>440</posx>
+				<posy>498</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+		
+        <control type="button" id="30018"><!-- shortcut8 -->
+            <posx>700</posx>
+            <posy>468</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			   <texturenofocus>shortcut.png</texturenofocus>
+            <onup>30015</onup>
+            <ondown>30012</ondown>
+            <onleft>30017</onleft>
+            <onright>30019</onright>
+			<label>$ADDON[script.ivueguide 80005]</label>
+				<visible>true</visible>
+		</control>
+
+        <control type="label" id="31018"><!-- Shortcut8 Title -->
+            <posx>700</posx>
+            <posy>467</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32018"><!-- Shortcut8 image -->
+				<posx>700</posx>
+				<posy>498</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+		
+        <control type="button" id="30019"><!-- shortcut 9 -->
+            <posx>960</posx>
+            <posy>468</posy>
+            <width>235</width>
+            <height>160</height>
+            <texturefocus>shortcut_focus.png</texturefocus>
+			<texturenofocus>shortcut.png</texturenofocus>
+            <onup>30016</onup>
+            <ondown>30013</ondown>
+            <onleft>30018</onleft>
+            <onright>30017</onright>
+			<label>$ADDON[script.ivueguide 80005]</label>
+				<visible>true</visible>
+        </control>
+
+        <control type="label" id="31019"><!-- Shortcut9 Title -->
+            <posx>960</posx>
+            <posy>467</posy>
+            <width>235</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>true</visible>
+        </control>
+
+			<control type="image" id="32019"><!-- Shortcut9 image -->
+				<posx>960</posx>
+				<posy>498</posy>
+				<width>235</width>
+				<height>130</height>
+				<aspectratio></aspectratio>
+				<visible>true</visible>
+			</control>
+		
+        <control type="button" id="30020"><!-- shortcut10 -->
+            <posx>999</posx>
+            <posy>365</posy>
+            <width>240</width>
+            <height>176</height>
+            <texturefocus>menuthumb_focus.png</texturefocus>
+			<texturenofocus>shortcut.png</texturenofocus>
+            <onup>30015</onup>
+            <ondown>4001</ondown>
+            <onleft>30019</onleft>
+            <onright>30016</onright>
+			<label>$ADDON[script.ivueguide 80005]</label>
+				<visible>false</visible>
+        </control>
+
+        <control type="label" id="31020"><!-- Shortcut10 Title -->
+            <posx>1010</posx>
+            <posy>379</posy>
+            <width>220</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>tvg_font13</font>
+            <textcolor>ffffffff</textcolor>
+			<visible>false</visible>
+        </control>
+
+			<control type="image" id="32020"><!-- Shortcut10 image -->
+				<posx>1015</posx>
+				<posy>414</posy>
+				<width>208</width>
+				<height>115</height>
+				<aspectratio></aspectratio>
+				<visible>false</visible>
+			</control>
+		
+		</controls>
+</window>

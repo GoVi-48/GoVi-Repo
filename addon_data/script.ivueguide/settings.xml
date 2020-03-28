@@ -1,0 +1,94 @@
+<settings version="2">
+    <setting id="addon.match">1</setting>
+    <setting id="alternative.playback" default="true">false</setting>
+    <setting id="autostart" default="true">false</setting>
+    <setting id="backgroundTexture" default="true">[COLOR ff833232]ff833232[/COLOR]</setting>
+    <setting id="cat_keymap" default="true"></setting>
+    <setting id="categories.ini.enabled" default="true">false</setting>
+    <setting id="categories.ini.file">special://home/media/IPTV/iVue.ini</setting>
+    <setting id="categories.ini.type" default="true">0</setting>
+    <setting id="categories.ini.url" default="true"></setting>
+    <setting id="categories.launch" default="true">false</setting>
+    <setting id="categories.path">custom</setting>
+    <setting id="category" default="true">All Channels</setting>
+    <setting id="channel.color" default="true">[COLOR ffffffff]white[/COLOR]</setting>
+    <setting id="channel.filter.sort" default="true">0</setting>
+    <setting id="channel.num">true</setting>
+    <setting id="creator.interval">3</setting>
+    <setting id="custom.xmltv.type">1</setting>
+    <setting id="CustomAddon1" default="true">RunAddon(plugin.video.iplayerwww)</setting>
+    <setting id="CustomAddon1.image" default="true">special://home/addons/script.ivueguide/resources/png/bbc icon.png</setting>
+    <setting id="CustomAddon1.label">BBC iPlayer</setting>
+    <setting id="CustomAddon10" default="true">RunAddon(plugin.video.the-loop)</setting>
+    <setting id="CustomAddon10.image" default="true">special://home/addons/script.ivueguide/resources/png/loop.png</setting>
+    <setting id="CustomAddon10.label" default="true">The Loop</setting>
+    <setting id="CustomAddon2" default="true">RunAddon(plugin.video.itv)</setting>
+    <setting id="CustomAddon2.image" default="true">special://home/addons/script.ivueguide/resources/png/itv icon.png</setting>
+    <setting id="CustomAddon2.label">ITV Player</setting>
+    <setting id="CustomAddon3" default="true">RunAddon(plugin.video.genesis)</setting>
+    <setting id="CustomAddon3.image" default="true">special://home/addons/script.ivueguide/resources/png/genesis.png</setting>
+    <setting id="CustomAddon3.label" default="true">Genesis</setting>
+    <setting id="CustomAddon4" default="true">RunAddon(plugin.video.loki)</setting>
+    <setting id="CustomAddon4.image" default="true">special://home/addons/script.ivueguide/resources/png/loki.png</setting>
+    <setting id="CustomAddon4.label" default="true">Loki</setting>
+    <setting id="CustomAddon5" default="true">RunAddon(plugin.video.venom)</setting>
+    <setting id="CustomAddon5.image" default="true">special://home/addons/script.ivueguide/resources/png/venom.png</setting>
+    <setting id="CustomAddon5.label" default="true">Venom</setting>
+    <setting id="CustomAddon6" default="true">RunAddon(plugin.audio.radio_de)</setting>
+    <setting id="CustomAddon6.image" default="true">special://home/addons/script.ivueguide/resources/png/radio.png</setting>
+    <setting id="CustomAddon6.label" default="true">Radio</setting>
+    <setting id="CustomAddon7" default="true">RunAddon(plugin.video.youtube)</setting>
+    <setting id="CustomAddon7.image" default="true">special://home/addons/script.ivueguide/resources/png/youtube.png</setting>
+    <setting id="CustomAddon7.label" default="true">Youtube</setting>
+    <setting id="CustomAddon8" default="true">RunAddon(plugin.video.Rising.Tides)</setting>
+    <setting id="CustomAddon8.image" default="true">special://home/addons/script.ivueguide/resources/png/rising.png</setting>
+    <setting id="CustomAddon8.label" default="true">Rising Tides</setting>
+    <setting id="CustomAddon9" default="true">RunAddon(plugin.video.endzone)</setting>
+    <setting id="CustomAddon9.image" default="true">special://home/addons/script.ivueguide/resources/png/endzone.png</setting>
+    <setting id="CustomAddon9.label" default="true">The Endzone</setting>
+    <setting id="day" default="true">1</setting>
+    <setting id="description.color" default="true">[COLOR ffffffff]white[/COLOR]</setting>
+    <setting id="directVod" default="true">Auto Play</setting>
+    <setting id="download.skin" default="true"></setting>
+    <setting id="enable.osd">true</setting>
+    <setting id="focus.color" default="true">[COLOR ffffffff]white[/COLOR]</setting>
+    <setting id="focusTexture" default="true">[COLOR ff9a1f00]ff9a1f00[/COLOR]</setting>
+    <setting id="font" default="true">Disabled</setting>
+    <setting id="ignore.stream" default="true">false</setting>
+    <setting id="ivue.addons.ini">false</setting>
+    <setting id="last.skin">BellVue</setting>
+    <setting id="linked.addon">true</setting>
+    <setting id="logos" default="true">http://raw.githubusercontent.com/totaltec2014/ivue2/master/logos/</setting>
+    <setting id="logos.enabled">true</setting>
+    <setting id="logos.folder">special://home/media/Icons/TV_Channels/Guide/</setting>
+    <setting id="logos.source">2</setting>
+    <setting id="los.shift.time" default="true">00:00</setting>
+    <setting id="mainurl" default="true">http://ivuetvguide.com/ivueguide/</setting>
+    <setting id="nofocus.color">[COLOR ffc0c0c0]silver[/COLOR]</setting>
+    <setting id="notifications.enabled">true</setting>
+    <setting id="osd.epg">false</setting>
+    <setting id="osd.timer">10</setting>
+    <setting id="password" default="true">notneeded</setting>
+    <setting id="play.number">true</setting>
+    <setting id="remFocusTexture" default="true">[COLOR ffffd119]ffffd119[/COLOR]</setting>
+    <setting id="remTexture" default="true">[COLOR ffffff00]ffffff00[/COLOR]</setting>
+    <setting id="scroll.chan" default="true">Enabled</setting>
+    <setting id="shift.time">00:00</setting>
+    <setting id="skin">THC</setting>
+    <setting id="skin.colours">true</setting>
+    <setting id="sport_keymap" default="true"></setting>
+    <setting id="stop-stream">false</setting>
+    <setting id="sub.xmltv" default="true"></setting>
+    <setting id="sub.xmltv.url" default="true"></setting>
+    <setting id="transparent.enabled" default="true">false</setting>
+    <setting id="userid" default="true">notneeded</setting>
+    <setting id="username" default="true">notneeded</setting>
+    <setting id="userurl" default="true">http://ivuetvguide.com/ivueguide/</setting>
+    <setting id="vodAddon" default="true">iPlayer / ITV Player</setting>
+    <setting id="xmas.ignore" default="true">false</setting>
+    <setting id="xmltv.file">C:\Program Files (x86)\WebGrab+Plus\xmltv.xml</setting>
+    <setting id="xmltv.interval">0</setting>
+    <setting id="xmltv.type">6</setting>
+    <setting id="xmltv.type_select">Custom File</setting>
+    <setting id="xmltv.url">https://raw.githubusercontent.com/GoVi-48/GoVi-EPG/master/xmltv.xml</setting>
+</settings>

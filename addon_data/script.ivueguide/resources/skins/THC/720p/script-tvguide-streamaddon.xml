@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+    <allowoverlay>no</allowoverlay>
+    <defaultcontrol always="true">1000</defaultcontrol>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>200</posy>
+    </coordinates>
+    <animation effect="fade" start="0" end="100" time="250">WindowOpen</animation>
+
+    <controls>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <texture>main.png</texture>
+        </control>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>30</height>
+           <texture>main.png</texture>
+            <visible>true</visible>
+        </control>
+        <control type="image">
+            <posx>0</posx>
+            <posy>480</posy>
+            <width>1280</width>
+            <height>30</height>
+            <texture>main.png</texture>
+            <visible>true</visible>
+        </control>
+        <control type="label" id="4000">
+            <posx>20</posx>
+            <posy>35</posy>
+            <width>600</width>
+            <height>80</height>
+           <textcolor>ffffffff</textcolor>
+            <font>font13</font>
+            <align>center</align>
+            <label>[B]$ADDON[script.ivueguide 30700][/B]</label>
+            <wrapmultiline>true</wrapmultiline>
+            <visible>false</visible>
+        </control>
+		<control type="panel" id="1000">
+			<posx>125</posx>
+            <posy>45</posy>
+            <width>1000</width>
+            <height>370</height>
+			<onup>1000</onup>
+			<ondown>1000</ondown>
+			<viewtype label="list">icon</viewtype>
+			<preloaditems>2</preloaditems>
+			<pagecontrol>60</pagecontrol>
+			<orientation>vertical</orientation>
+			<scrolltime tween="cubic" easing="out">500</scrolltime>
+			<align>center</align>
+			<aligy>center</aligy>
+            <animation effect="slide" start="0,0" end="100,0" condition="!Integer.IsGreater(Container(1000).NumItems,4)">conditional</animation>
+            <animation effect="slide" start="0,0" end="100,0" condition="!Integer.IsGreater(Container(1000).NumItems,3)">conditional</animation>
+            <animation effect="slide" start="0,0" end="95,0" condition="!Integer.IsGreater(Container(1000).NumItems,2)">conditional</animation>
+            <animation effect="slide" start="0,0" end="110,0" condition="!Integer.IsGreater(Container(1000).NumItems,1)">conditional</animation>
+            <animation type="Conditional">
+                <effect type="zoom" end="170" center="1,512" time="100" />
+            </animation>
+            <itemlayout width="200" height="175">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>230</width>
+                    <height>190</height>
+                    <texture>shortcut.png</texture>
+                    <align>center</align>
+                </control>
+                <control type="image">
+                    <posx>70.5</posx>
+                    <posy>56.5</posy>
+                    <width>90</width>
+                    <height>72.5</height>
+                    <info>ListItem.Icon</info>
+                </control>
+                <control type="label">
+                    <posx>25</posx>
+                    <posy>167</posy>
+                    <width>180</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>font13</font>
+                    <textcolor>ffffffff</textcolor>
+                    <info>ListItem.Label</info>
+                </control>
+            </itemlayout>
+            <focusedlayout width="200" height="175">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>230</width>
+                    <height>190</height>
+                    <texture>shortcut_focus.png</texture>
+                </control>
+                <control type="image">
+                    <posx>70.5</posx>
+                    <posy>56.5</posy>
+                    <width>90</width>
+                    <height>72.5</height>
+                    <info>ListItem.Icon</info>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <posx>25</posx>
+                    <posy>167</posy>
+                    <width>180</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>font13</font>
+                    <textcolor>ffffffff</textcolor>
+                    <info>ListItem.Label</info>
+                    <scroll time="3600" delay="6000" repeat="6000">true</scroll>
+                </control>
+            </focusedlayout>
+        </control>
+    </controls>
+</window>
