@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.govi.wizard" name="GoVi Wizard" version="0.0.48" provider-name="GoVi">
+<addon id="plugin.video.govi.wizard" name="GoVi Wizard" version="0.0.50" provider-name="GoVi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
