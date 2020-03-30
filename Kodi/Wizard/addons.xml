@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+	
+<!-- Video GoVi Wizard -->	
+	<addon id="plugin.video.govi.wizard" name="GoVi Wizard" version="0.0.48" provider-name="GoVi">
+	  <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	  </requires>
+	  <extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>video executable</provides>
+	  </extension>
+	  <extension point="xbmc.addon.metadata">
+		<summary lang="en">GoVi Wizard</summary>
+		<description lang="en">Wizard GoVi Build</description>
+		<platform>all</platform>
+	  </extension>
+	</addon>
+	
+</addons>
