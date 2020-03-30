@@ -1,13 +1,6 @@
 # My Addon Settings
 
--  Copiar carpetas en:
+-  Build en:
 ```
-"C:\Users\%USERNAME%\AppData\Roaming\Kodi\userdata\addon_data"
+"https://www.dropbox.com/s/n8at6bsudrlj9ku/Kodi-GoVi_Build.zip?dl=1"
 ```
-
--  Extraer zip en:
-```
-"C:\Users\%USERNAME%\AppData\Roaming\Kodi"
-```
-
-&nbsp; &nbsp;* %USERNAME%= Tu nombre de usuario.
