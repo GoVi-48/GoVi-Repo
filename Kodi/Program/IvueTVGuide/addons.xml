@@ -2,7 +2,7 @@
 <addons>
 
 <!-- Program Ivue TV Guide -->
-	<addon id="script.ivueguide" name="Ivue TV Guide" version="4.2.9" provider-name="iVue Tv Guide">
+	<addon id="script.ivueguide" name="Ivue TV Guide" version="4.2.10" provider-name="iVue Tv Guide">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
 			<import addon="script.module.simplejson" version="2.0.10"/>
