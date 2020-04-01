@@ -17,7 +17,7 @@
 	</addon>
 	
 	<addon id="plugin.video.IVUEcreator"
-	version="0.3.8"
+	version="0.3.9"
 	name="IVUEcreator"
 	provider-name="Team IVUE">
 	<requires>
