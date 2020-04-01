@@ -2,20 +2,22 @@
 <addons>
 
 <!-- Program Ivue TV Guide -->
-	<addon id="plugin.video.intervue" name="InterVUE" version="1.0.5" provider-name="[B]subTeam[/B]">
-	  <requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	  </requires>
-	  <extension point="xbmc.python.script" library="main.py"> 
-	  </extension>
-	  <extension point="xbmc.addon.metadata">
-		<summary lang="en"></summary>
-		<description lang="en"></description>
-		<platform>all</platform>
-	  </extension>
+	<addon id="script.ivueguide" name="Ivue TV Guide" version="4.2.9" provider-name="iVue Tv Guide">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+			<import addon="script.module.simplejson" version="2.0.10"/>
+		</requires>
+		<extension point="xbmc.python.script" library="addon.py"/>
+		<extension point="xbmc.service" library="service.py" start="login"/>
+		<extension point="xbmc.addon.metadata">
+		<provides>video</provides>
+			<description lang="en">Final Final Final ISH Release of Ivue Guide, simple free and effective, We hope you like it now with category intergration #teamiVue, Huge thanks to all coders out there for getting involved.</description>
+			<disclaimer lang="en">Final Release of Ivue Guide and is forked and based on FTV Guide, Dixie , Ivue ,Primeval, tommy winthers original code, </disclaimer>
+		</extension>
 	</addon>
+	
 	<addon id="plugin.video.IVUEcreator"
-	version="0.3.7"
+	version="0.3.8"
 	name="IVUEcreator"
 	provider-name="Team IVUE">
 	<requires>
@@ -33,19 +35,20 @@
 	  <disclaimer lang="en">Modified by TeamJDM from the original code from "Primeaval" </disclaimer>
 	</extension>
 	</addon>
-	<addon id="script.ivueguide" name="Ivue TV Guide" version="4.2.8" provider-name="iVue Tv Guide">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-			<import addon="script.module.simplejson" version="2.0.10"/>
-		</requires>
-		<extension point="xbmc.python.script" library="addon.py"/>
-		<extension point="xbmc.service" library="service.py" start="login"/>
-		<extension point="xbmc.addon.metadata">
-		<provides>video</provides>
-			<description lang="en">Final Final Final ISH Release of Ivue Guide, simple free and effective, We hope you like it now with category intergration #teamiVue, Huge thanks to all coders out there for getting involved.</description>
-			<disclaimer lang="en">Final Release of Ivue Guide and is forked and based on FTV Guide, Dixie , Ivue ,Primeval, tommy winthers original code, </disclaimer>
-		</extension>
-	</addon>	
+		
+	<addon id="plugin.video.intervue" name="InterVUE" version="1.0.5" provider-name="[B]subTeam[/B]">
+	  <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	  </requires>
+	  <extension point="xbmc.python.script" library="main.py"> 
+	  </extension>
+	  <extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en"></description>
+		<platform>all</platform>
+	  </extension>
+	</addon>
+	
 	<addon id="script.iVueSkins" name="iVue2 Skins" version="1.0.3" provider-name="retrorat1">
 	  <requires>
 		<import addon="xbmc.python" version="2.1.0"/>
