@@ -1,5 +1,0 @@
-<settings version="2">
-    <setting id="Reset addons2.ini" default="true"></setting>
-    <setting id="Reset Database" default="true"></setting>
-    <setting id="view_mode">51</setting>
-</settings>
