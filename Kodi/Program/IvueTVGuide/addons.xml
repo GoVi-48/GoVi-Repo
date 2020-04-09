@@ -17,7 +17,7 @@
 	</addon>
 	
 	<addon id="plugin.video.IVUEcreator"
-	version="0.4.0"
+	version="0.4.1"
 	name="IVUEcreator"
 	provider-name="Team IVUE">
 	<requires>
@@ -35,18 +35,5 @@
 	  <disclaimer lang="en">Modified by TeamJDM from the original code from "Primeaval" </disclaimer>
 	</extension>
 	</addon>
-		
-	<addon id="plugin.video.intervue" name="InterVUE" version="1.0.5" provider-name="[B]subTeam[/B]">
-	  <requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	  </requires>
-	  <extension point="xbmc.python.script" library="main.py"> 
-	  </extension>
-	  <extension point="xbmc.addon.metadata">
-		<summary lang="en"></summary>
-		<description lang="en"></description>
-		<platform>all</platform>
-	  </extension>
-	</addon>	
 	
 </addons>
