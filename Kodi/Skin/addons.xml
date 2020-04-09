@@ -2,13 +2,25 @@
 <addons>
 	
 <!-- Skin Aeon GoVi -->
-	<addon id="skin.aeon.govi" version="20.4.1" name="Aeon GoVi" provider-name="GoVi">
+	<addon id="skin.aeon.govi" version="20.4.9" name="Aeon GoVi" provider-name="GoVi">
 		<requires>
 			<import addon="xbmc.gui" version="5.14.0" />
 			<import addon="script.skinshortcuts" version="1.0.10" />
+			<import addon="script.embuary.helper" version="1.4.5" />
+			<import addon="script.global.search" version="8.0.11" />
+			<import addon="script.module.youtube.dl" version="19.912.1" />
+			<import addon="plugin.video.themoviedb.helper" version="2.0.18" />
+			<import addon="plugin.video.youtube" version="6.7.0" />
+			<import addon="plugin.program.favourites.plus" version="1.0.62" />
+			<import addon="plugin.program.autocompletion" version="1.0.1" />
+			<import addon="metadata.tvdb.com" version="3.2.4" />
 			<import addon="service.library.data.provider" version="0.0.7" />
-			<import addon="resource.images.studios.white" version="0.0.1" />
+			<import addon="resource.images.studios.white" version="0.0.24" />
+			<import addon="resource.images.studios.coloured" version="0.0.18" />
 			<import addon="resource.images.recordlabels.white" version="0.0.1" />
+
+			<import addon="weather.yahoo" version="5.0.6" />
+			<import addon="pvr.iptvsimple" version="3.9.8" />
 		</requires>
 		<extension point="xbmc.gui.skin" debugging="false">
 			<res width="1920" height="1080" aspect="16:9" default="true" folder="1080p" />
@@ -85,8 +97,8 @@
 			<platform>all</platform>
 			<license>CC BY-NC-SA 4.0</license>
 			<assets>
-				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
 				<screenshot>resources/screenshots/screenshot-08.jpg</screenshot>
 				<screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
 				<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
