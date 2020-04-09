@@ -98,6 +98,22 @@
 		<source>https://bitbucket.org/lazka/mutagen/overview</source>
 	  </extension>
 	</addon>	
+
+<!-- Script Feedparser -->	
+	<addon id="script.module.feedparser" name="feedparser" version="5.2.1" provider-name="Kurt McKee">
+		<requires>
+			<import addon="xbmc.python" version="2.14.0"/>
+		</requires>
+		<extension point="xbmc.python.module" library="lib" />
+		<extension point="xbmc.addon.metadata">
+			<language></language>
+			<summary lang="en">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</summary>
+			<description lang="en">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</description>
+			<license>MIT</license>
+			<platform>all</platform>
+			<source>https://github.com/kurtmckee/feedparser</source>
+		</extension>
+	</addon>	
 	
 <!-- Program Super Favourites -->
 	<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="spoyser">
