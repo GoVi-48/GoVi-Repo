@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.govi" name="GoVi Repository" version="20.4.10" provider-name="GoVi">
+<addon id="repository.govi" name="GoVi Repository" version="20.4.13" provider-name="GoVi">
 	<extension point="xbmc.addon.repository" name="GoVi Repository">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Repo/addons.xml</info>
