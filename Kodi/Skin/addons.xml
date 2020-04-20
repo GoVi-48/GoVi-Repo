@@ -2,7 +2,7 @@
 <addons>
 	
 <!-- Skin Aeon GoVi -->
-	<addon id="skin.aeon.govi" version="20.4.16" name="Aeon GoVi" provider-name="GoVi">
+	<addon id="skin.aeon.govi" version="20.4.20" name="Aeon GoVi" provider-name="GoVi">
 		<requires>
 			<import addon="xbmc.gui" version="5.14.0" />
 			<import addon="script.skinshortcuts" version="1.0.10" />
