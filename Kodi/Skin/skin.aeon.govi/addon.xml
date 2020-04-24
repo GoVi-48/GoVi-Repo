@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aeon.govi" version="20.4.22" name="Aeon GoVi" provider-name="GoVi">
+<addon id="skin.aeon.govi" version="20.4.23" name="Aeon GoVi" provider-name="GoVi">
 	<requires>
 		<import addon="repository.govi" version="20.4.14" />
 		<import addon="xbmc.gui" version="5.14.0" />
