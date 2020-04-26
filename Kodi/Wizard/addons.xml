@@ -2,7 +2,7 @@
 <addons>
 	
 <!-- Video GoVi Wizard -->	
-	<addon id="plugin.program.govi.wizard" name="GoVi Wizard" version="20.4.15" provider-name="GoVi">
+	<addon id="plugin.program.govi.wizard" name="GoVi Wizard" version="20.4.25" provider-name="GoVi">
 	  <requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	  </requires>
