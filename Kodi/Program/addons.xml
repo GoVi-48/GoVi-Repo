@@ -1,233 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 	
-<!-- Script Extended Info -->	
-	<addon id="script.extendedinfo" name="OpenInfo" version="6.2.4" provider-name="A4K">
+	<addon id="script.skinshortcuts" name="Skin Shortcuts" version="2.0.3" provider-name="BigNoid, marcelveldt, SiLVO, anxdpanic">
 		<requires>
-			<import addon="xbmc.python" version="2.25.0"/>
-			<import addon="script.module.pil" version="1.1.7"/>
-			<import addon="plugin.video.youtube" version="6.2.2"/>
-			<import addon="script.module.requests" version="2.9.1"/>
-			<import addon="script.skin.helper.service" version="1.0.0"/>
-			<import addon="resource.images.studios.white" version="0.0.18"/>
-			<import addon="plugin.video.openmeta" version="1.0.0" optional="true"/>
+			<import addon="xbmc.python" version="3.0.0"/>
+			<import addon="script.module.unidecode" version="1.1.1+matrix.2"/>
+			<import addon="script.module.simpleeval" version="0.9.10"/>
 		</requires>
-		<extension point="xbmc.python.script" library="script.py"/>
-		<extension point="xbmc.python.pluginsource" library="plugin.py">
-			<provides>video</provides>
-		</extension>
-		<extension point="kodi.context.item">
-			<menu id="kodi.core.main">
-				<item library="context.py">
-					<label>OpenInfo</label>
-					<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)</visible>
-				</item>
-			</menu>
-		</extension>
+		<extension point="xbmc.python.library" library="resources/lib/entry_point.py"/>
 		<extension point="xbmc.addon.metadata">
-			<reuselanguageinvoker>false</reuselanguageinvoker>
-			<platform>all</platform>
-			<summary>Fork of the ExtendedInfo script from phil65</summary>
-			<description>This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Needs skin implementation for lot of functions and OpenMeta for library functions.</description>
-			<assets>
-				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
-				<screenshot>resources/screenshot1.jpg</screenshot>
-				<screenshot>resources/screenshot2.jpg</screenshot>
-				<screenshot>resources/screenshot3.jpg</screenshot>
-			</assets>
 			<news>
-			6.2.4 - Specify param in TV Show ID
-			6.2.3 - Fix TV Show trailers
-			6.2.2 - Added ability to search using the tvdb_id for "extendedepisodeinfo"
-			6.2.1 - Fix context menu now available for widgets pointing to OpenInfo's video addon items
-			6.2.0 - Added context menu force "player select" to the play button, available via "c" and long press "enter" button
+	[fix] translations in PVR |contrib: Dis90|
+	[fix] titles missing in some dialogs
+	[fix] handle missing profiles.xml gracefully (fixes Apple TV)
+	[lang] update translations from Weblate
 			</news>
-		</extension>
-	</addon>	
-	
-<!-- Script Youtube.dl -->	
-	<addon id="script.module.youtube.dl" name="youtube-dl Control" version="19.912.1" provider-name="Rick Phillips (ruuk)">
-		<requires>
-			<import addon="xbmc.python" version="2.14.0" />
-			<import addon="script.module.addon.signals" version="0.0.1"/>
-		</requires>
-		<extension point="xbmc.python.script" library="control.py">
-			<provides>executable</provides>
-		</extension>
-		<extension point="xbmc.python.module" library="lib" />
-		<extension point="xbmc.addon.metadata">
 			<platform>all</platform>
-			<summary lang="en">Module providing access to youtube-dl video stream extraction</summary>
-			<description lang="en">Module providing access to youtube-dl video stream extraction for hundreds of sites. Version is based on youtube-dl date version: YY.MDD.V where V is the addon specific sub-version. Also provides downloading with the option for background downloading with a queue and queue manager.</description>
-			<summary lang="el">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο</summary>
-			<description lang="el">Βοηθητική μονάδα πρόσβασης στους επιλυτές youtube-dl για την εξαγωγή ροών βίντεο από εκατοντάδες ιστότοπους. Η έκδοση βασίζεται στην έκδοση ημερομηνίας του youtube-dl: EE.MHH.EK όπου ΕΚ η υπό-έκδοση συγκεκριμένα για το πρόσθετο. Επιπλέον δίνει δυνατότητα μεταφόρτωσης στο παρασκήνιο με ουρά και διαχειριστή αυτής.</description>
-			<summary lang="es">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video</summary>
-			<description lang="es">Módulo que proporciona acceso a YouTube-dl para la extracción de flujos de video de cientos de sitios. La versión está basada en la versión de fecha youtube-dl: YY.MDD.V donde V es la subversión específica del complemento. También permite descargas con la opción de descarga en segundo plano con una cola y un administrador de colas.</description>
-			<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-			<forum>https://forum.kodi.tv/showthread.php?tid=200877</forum>
-			<source>https://github.com/ruuk/script.module.youtube.dl</source>
+			<license>GPL-2.0-only</license>
+			<forum>https://forum.kodi.tv/showthread.php?tid=178294</forum>
+			<source>https://github.com/mikesilvo164/script.skinshortcuts</source>
+			<assets>
+				<icon>resources/media/icon.png</icon>
+				<fanart>resources/media/fanart.jpg</fanart>
+			</assets>
+			<description lang="ar_SA">إضافة مخصصه للمظهر لتوفير إدارة بسيطة للودجيت &quot;الأقسام&quot; و الاختصارات على الشاشة (تتطلب دعم المظهر لها)</description>
+			<description lang="cs_CZ">Doplněk pro vzhledy poskytující jednoduchý management a seznamy uživatelských zkratek (vyžaduje podporu vzhledu)</description>
+			<description lang="da_DK">Add-on til skins der giver enkel styring og lister over brugergenveje (kræver skin-understøttelse)</description>
+			<description lang="de_DE">Addon für Skins zum einfachen Bearbeiten und Auflisten von benutzerdefinierten Verknüpfungen (erfordert Skinunterstützung)</description>
+			<description lang="el_GR">Πρόσθετο για κελύφη, το οποίο παρέχει έναν απλό τρόπο διαχείρισης και κατηγοριοποίησης των συντομεύσεων του χρήστη (πρέπει να υποστηρίζεται από το κέλυφος)</description>
+			<description lang="en_GB">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+			<description lang="en_NZ">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+			<description lang="en_US">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+			<description lang="es_ES">Complemento para las pieles para proporcionar una gestión sencilla y lista de atajos de usuario (requiere que la piel lo soporte)</description>
+			<description lang="fi_FI">Lisäosa, joka mahdollistaa ulkoasujen valikkokohteiden ja omien pikavalintojen lisäyksen ja niiden muokkauksen (vaatii tuen ulkoasulta)</description>
+			<description lang="fr_CA">Addiciel pour habillages qui fournit une gestion simple et un listage des raccourcis utilisateurs (exige la prise en charge de l&apos;habillage)</description>
+			<description lang="fr_FR">Module complémentaire pour les skins pour fournir une gestion et une liste simples de raccourcis utilisateur (nécessite la prise en charge des skins)</description>
+			<description lang="gl_ES">Complemento que fornece aos temas dunha xestión sinxela dos atallos dos usuarios (require soporte do tema)</description>
+			<description lang="hr_HR">Dodatak za presvlake koji omogućuje jednostavno upravljanje i prikaz prečaca korisnika (zahtijeva podršku presvlake)</description>
+			<description lang="hu_HU">Felszín kiegészítő amely könnyen kezelhetővé és listázhatóvá teszi a felhasználói parancsikonokat (Felszín támogatás szükséges)</description>
+			<description lang="is_IS">Viðbót fyrir viðmót til að halda utan um flýtivísa og fá yfirlit yfir þá (þarfnast stuðnings frá viðmóti)</description>
+			<description lang="it_IT">Add-on per gli skin per consentire un facile gestione ed elenco delle scorciatoie utente (richiede che lo skin lo supporti)</description>
+			<description lang="ko_KR">사용자 단축키의 간단한 관리 및 목록을 제공하는 스킨용 애드온(스킨 지원 필요)</description>
+			<description lang="lt_LT">Priedas teminėms išvaizdoms, kad jos turėtų galimybę paprastai tvarkyti ir atvaizduoti vartotojo sukurtas nuorodas (reikalingas teminės išvaizdos palaikymas)</description>
+			<description lang="nb_NO">Tillegg for enkel administrering og opplisting av bruker-snarveier i tema (krever støtte i tema)</description>
+			<description lang="nl_NL">Add-on voor skins om te voorzien in het eenvoudig beheren en sorteren van gebruikers snelkoppelingen (vereist skin ondersteuning)</description>
+			<description lang="pl_PL">Wtyczka dla skór, która zapewnia proste zarządzanie i tworzenie list skrótów użytkownika (wymaga wsparcia skóry)</description>
+			<description lang="pt_BR">Add-on para que as skins possam prover gerenciamento de lista de atalhos para o menu principal (requer suporte da skin)</description>
+			<description lang="pt_PT">Um add-on que permite que os temas tenham recursos simples para gerir e listar atalhos de utilizadores (é necessário suporte do tema)</description>
+			<description lang="ru_RU">Дополнение для обложек, предоставляющее простой способ управления пользовательскими ярлыками (требуется поддержка обложкой)</description>
+			<description lang="sk_SK">Doplnok poskytujúci jednoduchý manažment zoznamu užívateľských odkazov (vyžaduje podporu v doplnku pre vzhľad)</description>
+			<description lang="sv_SE">Skinntillägg som tillhandahåller enkel hantering och översikt av användargenvägar (om skinnet stöder det)</description>
+			<description lang="zh_CN">皮肤加载项，提供简单的用户快捷方式管理和列表（需要皮肤支持）</description>
+			<description lang="zh_TW">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
 		</extension>
-	</addon>	
-	
-<!-- Script Mutagen -->		
-	<addon id="script.module.mutagen"
-		   name="mutagen"
-		   version="2019.10.10"
-		   provider-name="Joe Wreschnig">
-	  <requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	  </requires>
-	  <extension point="xbmc.python.module"
-				 library="lib" />
-	  <extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<language></language>
-		<summary lang="en">Mutagen is a Python module to handle audio metadata.</summary>
-		<description lang="en">Mutagen is a Python module to handle audio metadata. It supports ASF, FLAC, 
-	M4A, Monkey's Audio, MP3, Musepack, Ogg Opus, Ogg FLAC, Ogg Speex, Ogg 
-	Theora, Ogg Vorbis, True Audio, WavPack and OptimFROG audio files. All 
-	versions of ID3v2 are supported, and all standard ID3v2.4 frames are 
-	parsed. It can read Xing headers to accurately calculate the bitrate and 
-	length of MP3s. ID3 and APEv2 tags can be edited regardless of audio 
-	format. It can also manipulate Ogg streams on an individual packet/page 
-	level.</description>
-		<disclaimer lang="en">Code taken from http://code.google.com/p/mutagen/</disclaimer>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<website>http://code.google.com/p/mutagen/</website>
-		<source>https://bitbucket.org/lazka/mutagen/overview</source>
-	  </extension>
-	</addon>	
+	</addon>
 
-<!-- Script Feedparser -->	
-	<addon id="script.module.feedparser" name="feedparser" version="5.2.1" provider-name="Kurt McKee">
-		<requires>
-			<import addon="xbmc.python" version="2.14.0"/>
-		</requires>
-		<extension point="xbmc.python.module" library="lib" />
-		<extension point="xbmc.addon.metadata">
-			<language></language>
-			<summary lang="en">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</summary>
-			<description lang="en">Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds</description>
-			<license>MIT</license>
-			<platform>all</platform>
-			<source>https://github.com/kurtmckee/feedparser</source>
-		</extension>
-	</addon>	
-	
-<!-- Program Favourites Plus -->	
-	<addon id="plugin.program.favourites.plus" name="Favourites Plus" version="1.0.62" provider-name="spoyser">
-	  <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.metahandler" optional="true" />
-	  </requires>
-	  <extension point="xbmc.python.pluginsource" library="default.py">
-	  <provides>video executable</provides>
-	  </extension>
-	  <extension point="xbmc.service" library="service.py" start="startup" />
-	  <extension point="xbmc.addon.metadata">
-		<summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
-		<description lang="en">Favourites Plus is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Favourites Plus, even from addons that don't normally provide this feature.[CR][CR]Favourites Plus allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
-		<platform>all</platform>
-		<language>en</language>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-		<website></website>
-		<source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.favourites.plus</source>
-		<email>seanpoyser at gmail.com</email>
-		<news>
-	1.0.59: 29th May 2017
-		- 'Now playing' text now defined by SF due to skin variations
-		</news>
-	  </extension>
-	  <extension point="kodi.context.item">
-		<menu id="kodi.core.main">
-		  <item library="capture.py">
-			<label>$ADDON[plugin.program.favourites.plus 30002]</label>
-			<visible>false</visible>
-		  </item>
-		  <item library="menu_addtofaves.py">
-			<label>$ADDON[plugin.program.favourites.plus 30047]</label>
-			<visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.favourites.plus)</visible>
-		  </item>
-		  <item library="menu_download.py">
-			<label>$ADDON[plugin.program.favourites.plus 30259]</label>
-			<visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
-		  </item>
-		</menu>
-	  </extension>
-	</addon>	
-	
-<!-- Program Super Favourites -->
-	<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="spoyser">
-	  <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.metahandler" optional="true" />
-	  </requires>
-	  <extension point="xbmc.python.pluginsource" library="default.py">
-	  <provides>executable</provides>
-	  </extension>
-	  <extension point="xbmc.service" library="service.py" start="startup" />
-	  <extension point="xbmc.addon.metadata">
-		<summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
-		<description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
-		<platform>all</platform>
-		<language>en</language>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-		<website></website>
-		<source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
-		<email>seanpoyser at gmail.com</email>
-		<news>
-	1.0.59: 29th May 2017
-		- 'Now playing' text now defined by SF due to skin variations
-		</news>
-	  </extension>
-	  <extension point="kodi.context.item">
-		<menu id="kodi.core.main">
-		  <item library="capture.py">
-			<label>$ADDON[plugin.program.super.favourites 30002]</label>
-			<visible>false</visible>
-		  </item>
-		  <item library="menu_addtofaves.py">
-			<label>$ADDON[plugin.program.super.favourites 30047]</label>
-			<visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
-		  </item>
-		  <item library="menu_download.py">
-			<label>$ADDON[plugin.program.super.favourites 30259]</label>
-			<visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
-		  </item>
-		</menu>
-	  </extension>
-	</addon>
-	
-<!-- Program Plexus -->	
-	<addon id="program.plexus"
-		   name="Plexus"
-		   version="0.1.8"
-		   provider-name="tvaddons">
-	  <requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.requests" />
-	  </requires>
-	  <extension point="xbmc.python.pluginsource"
-				library="default.py">
-			<provides>executable</provides>
-	  </extension>
-	  
-	  <extension point="xbmc.addon.metadata">
-		<summary>SopCast and AceStream for Kodi</summary>
-		<description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
-		<description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
-		<description lang="es">Plexus - Una estructura compleja conteniendo una intrincada red de partes. Plexus añade soporte nativo peer-to-peer (AceStream y SopCast) al Centro de Entretenimiento Kodi para varias plataformas.[CR][CR]Documentacion: (falta)</description>
-		<disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
-		<disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
-		<disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
-		<platform>all</platform>
-		<forum>https://www.tvaddons.co/forums</forum>
-		<website>https://www.tvaddons.co</website>
-	  </extension>
-	</addon>
-	
-	
 </addons>
