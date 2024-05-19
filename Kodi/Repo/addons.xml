@@ -25,11 +25,6 @@
 				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Program/</datadir>
 			</dir>
 			<dir>
-				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Program/IvueTVGuide/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Program/IvueTVGuide/addons.xml.md5</checksum>
-				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Program/IvueTVGuide/</datadir>
-			</dir>
-			<dir>
 				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Video/addons.xml</info>
 				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Video/addons.xml.md5</checksum>
 				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Video/</datadir>
