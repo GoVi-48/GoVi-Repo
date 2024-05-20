@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aeon.govi" version="24.5.20" name="Aeon GoVi" provider-name="GoVi">
+<addon id="skin.aeon.govi" version="24.5.21" name="Aeon GoVi" provider-name="GoVi">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.skinshortcuts" version="2.0.3" />
 		<import addon="script.skinvariables" version="0.2.5" />
 		<import addon="script.embuary.helper" version="2.0.8" />
 		<import addon="script.trakt" version="3.6.1" />
+		<import addon="plugin.program.autowidget" version="3.7.0" />
 		<import addon="service.library.data.provider" version="0.0.7" />
 		<import addon="resource.images.studios.coloured" version="0.0.1" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
