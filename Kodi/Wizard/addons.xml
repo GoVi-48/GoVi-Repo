@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-	
-<!-- Video GoVi Wizard -->	
-	<addon id="plugin.program.govi.wizard" name="GoVi Wizard" version="20.4.25" provider-name="GoVi">
+	<addon id="plugin.program.govi.wizard" name="GoVi Wizard" version="24.5.21" provider-name="GoVi">
 	  <requires>
-		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="xbmc.python" version="3.0.0"/>
 	  </requires>
 	  <extension point="xbmc.python.pluginsource" library="default.py">
 			<provides>executable</provides>
 	  </extension>
 	  <extension point="xbmc.addon.metadata">
 		<summary lang="en">GoVi Wizard</summary>
-		<description lang="en">Wizard GoVi Build</description>
+		<description lang="en">Wizard para instalar configuracón personalizada de Kodi hecha por GoVi[CR]Addons principalmente en español.[CR]Skin Aeon GoVi[CR]Widgets peronalizados con Super Favourites[CR]Guía de TV Personalizada[CR]Y más sorpresas...</description>
 		<platform>all</platform>
 	  </extension>
 	</addon>
-	
 </addons>
