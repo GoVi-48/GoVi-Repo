@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-	<addon id="skin.aeon.govi" version="24.5.22" name="Aeon GoVi" provider-name="GoVi">
+	<addon id="skin.aeon.govi" version="24.5.24" name="Aeon GoVi" provider-name="GoVi">
 		<requires>
 			<import addon="xbmc.gui" version="5.17.0" />
 			<import addon="script.skinshortcuts" version="2.0.3" />
