@@ -3,11 +3,6 @@
 	<addon id="repository.govi" name="GoVi Repository" version="24.5.20" provider-name="GoVi">
 		<extension point="xbmc.addon.repository" name="GoVi Repository">
 			<dir>
-				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Skin/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Skin/addons.xml.md5</checksum>
-				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Skin/</datadir>
-			</dir>
-			<dir>
 				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Repo/addons.xml</info>
 				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Repo/addons.xml.md5</checksum>
 				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Repo/</datadir>
@@ -16,6 +11,16 @@
 				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Wizard/addons.xml</info>
 				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Wizard/addons.xml.md5</checksum>
 				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Wizard/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Skin/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Skin/addons.xml.md5</checksum>
+				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Skin/</datadir>
+			</dir>
+			<dir>
+				<info compressed="false">https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Program/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/GoVi-48/GoVi-Repo/master/Kodi/Program/addons.xml.md5</checksum>
+				<datadir zip="true">https://govi-48.github.io/GoVi-Repo/Kodi/Program/</datadir>
 			</dir>
 		</extension>
 		<extension point="xbmc.addon.metadata">
