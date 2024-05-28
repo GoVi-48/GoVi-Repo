@@ -11,6 +11,11 @@
 		<summary lang="en">GoVi Wizard</summary>
 		<description lang="es">Wizard para instalar configuracón personalizada de Kodi hecha por GoVi[CR]Addons principalmente en español.[CR]Skin Aeon GoVi[CR]Widgets peronalizados con Autowidget[CR]Y más..</description>
 		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
 	  </extension>
 	</addon>
+
 </addons>
