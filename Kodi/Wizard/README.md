@@ -1,4 +1,4 @@
 # Kodi GoVi Build
--  Version actual: 20.4.25
+-  Version actual: 24.5.28
 
--  Download: https://www.dropbox.com/s/z9ez6yrz1egj17b/Kodi-GoVi_Build.zip?dl=1
+-  Download: https://www.dropbox.com/scl/fi/792uxy6jje2l12dhlitsq/Kodi-21_GoVi_Build-v2024.5.28.zip?dl=1
