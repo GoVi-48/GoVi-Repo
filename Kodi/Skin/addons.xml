@@ -16,6 +16,7 @@
 			<import addon="plugin.video.themoviedb.helper" version="2.0.18" />
 			<import addon="plugin.video.youtube" version="6.7.0" />
 			<import addon="plugin.program.autowidget" version="3.7.0" />
+			<import addon="plugin.program.super.favourites" version="2.3.7" />
 		</requires>
 		<extension point="xbmc.gui.skin" debugging="false">
 			<res width="1920" height="1080" aspect="16:9" default="true" folder="1080p" />
